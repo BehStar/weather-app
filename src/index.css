@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0.5rem auto;
+  transform: skew(5deg);
+  border: 1px solid #000;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.wrapper {
+  width: 100%;
+  padding: 1rem;
+  padding-bottom: 0;
+  background-color: rgb(5, 16, 45);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper h1 {
+  width: 28rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  text-align: center;
+  color: white;
+}
+.img {
+  width: 100%;
+  height: 20rem;
+  background: url("/images/weather-img.png") no-repeat center;
+  background-size: contain;
+}
+@media screen and (max-width: 1300px) {
+  .container {
+    transform: skew(0deg);
+  }
+}

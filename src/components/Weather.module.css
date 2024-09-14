@@ -1,0 +1,292 @@
+.wrapper {
+  background-color: rgba(5, 16, 45, 0.318);
+  position: relative;
+}
+.wrapperDay{
+  background-color: white;
+  padding: 1rem;
+}
+.wrapperNight{
+  background-color: rgb(5, 16, 45, 0.35);
+  padding: 1rem;
+}
+.btnsLocWrapper {
+  height: 7rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  position: relative;
+  margin-bottom: 2rem;
+
+}
+.locationWrapper {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  border: 1px solid lightgray;
+  padding: 1rem;
+  display: grid;
+  position: relative;
+  background: url("/images/bg.jpg") no-repeat center;
+}
+.locationWrapper h6 {
+  font-size: 2rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-wrap: nowrap;
+}
+.lastUpdate {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+.uvBtnsWrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 0.5rem;
+}
+.uvWrapper {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 0.2rem;
+}
+.uvIndex {
+  background-color: rgb(5, 16, 45);
+  color: white;
+  border-radius: 1rem;
+}
+.uvIndex h3 {
+  font-size: 4rem;
+  text-align: center;
+  color: brown;
+}
+.uvIndex p {
+  font-size: 1rem;
+  text-align: center;
+}
+.uvTable {
+  border-radius: 1rem;
+  border: 1px solid lightgray;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  overflow: hidden;
+}
+.uvTable p {
+  padding-left: 0.2rem;
+  border-bottom: 1px solid lightgray;
+}
+.uvTable p:last-child {
+  border: none;
+}
+.uvTable .color {
+  background: linear-gradient(orange, red);
+}
+.uvTable .color:nth-child(1) {
+  background: linear-gradient(white, green);
+}
+.uvTable .color:nth-child(3) {
+  background: linear-gradient(green, orange);
+}
+.uvTable .color:nth-child(7) {
+  background: linear-gradient(red, purple);
+}
+.uvTable .color:nth-child(9) {
+  background: linear-gradient(purple, rgb(5, 16, 45));
+}
+.btnsBox {
+  display: grid;
+  gap: 0.5rem;
+}
+.btnsWrapper {
+  height: 80%;
+  border-radius: 3rem;
+  background-color: rgb(5, 16, 45);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  overflow: hidden;
+  position: relative;
+}
+.btnsWrapper button {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  cursor: pointer;
+  color: white;
+}
+.btnsWrapper div {
+  width: 50%;
+  border-radius: 3rem;
+  height: 100%;
+  background-color: rgba(128, 128, 128, 0.7);
+  position: absolute;
+  top: 0;
+  transition: 0.3s;
+}
+.btnsWrapper .showOn {
+  left: 0;
+}
+.btnsWrapper .showOff {
+  left: 50%;
+}
+/* -------Second-Row */
+
+.infoBoxesWrapper {
+  height: 15rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+.infoWrapper {
+  width: 100%;
+  height: 100%;
+  border: 1px solid lightgray;
+  border-radius: 1rem;
+  position: relative;
+  background: url("/images/bg-line.png") center 30% no-repeat;
+  transition: 0.3s;
+  overflow: hidden;
+  background-color: white;
+}
+.infoWrapper::before,
+.infoWrapper::after {
+  content: "";
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transition: 0.3s;
+}
+.infoWrapper::before {
+  left: 0;
+  background: linear-gradient(to left, white, rgb(5, 16, 45, 0.5));
+}
+.infoWrapper::after {
+  background: linear-gradient(to right, white, rgb(5, 16, 45, 0.5));
+  right: 0;
+}
+.infoWrapper:hover {
+  background-color: black;
+  color: white;
+}
+.infoWrapper:hover::before {
+  left: -50%;
+}
+.infoWrapper:hover::after {
+  right: -50%;
+}
+.timeConditionWrapper {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10;
+}
+.timeWrapper {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 1rem;
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+.condition {
+  padding-right: 1rem;
+  margin-top: 0.5rem;
+  display: grid;
+  justify-content: flex-end;
+  text-wrap: balance;
+}
+.condition h3 {
+  font-weight: normal;
+}
+.condition img {
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: contain;
+}
+.tempreture {
+  width: 17rem;
+  padding-left: 1rem;
+  margin-top: 1rem;
+  font-size: 3rem;
+  position: relative;
+  display: flex;
+  gap: 1rem;
+}
+.tempreture div {
+  display: flex;
+  justify-content: flex-end;
+}
+.degree {
+  font-size: 1.2rem;
+  position: absolute;
+  top: 0;
+}
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+.eachBox {
+  border-radius: 1rem;
+  border: thin solid lightgray;
+  padding: 1rem;
+  display: grid;
+  grid-template-rows: repeat(auto 1fr);
+}
+.eachBox h4 {
+  color: darkgray;
+  font-weight: normal;
+}
+.eachBox p {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.noSelectedCityMessage {
+  width: 100%;
+  height: 5rem;
+  border: 1px solid lightgray;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: brown;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .btnsLocWrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  .locationWrapper h6 {
+    font-size: 1.3rem;
+  }
+  .uvBtnsWrapper {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .infoBoxesWrapper {
+    height: auto;
+    grid-template-columns: 1fr;
+  }
+  .infoWrapper {
+    height: 15rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .btnsLocWrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  .uvBtnsWrapper {
+    grid-template-columns: 3fr 1fr;
+  }
+}
